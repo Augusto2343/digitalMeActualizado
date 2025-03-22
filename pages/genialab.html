@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GenialLab</title>
+    <meta
+    name="description"
+    content="Seccion GenialLab." />
+    <link rel="stylesheet" href="../estilos/globalStyles.css" />
+    <link rel="stylesheet" href="../estilos/genialLab.css" />
+    <link rel="stylesheet" href="../estilos/estilosRedes.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet" />
+    <link rel="icon" href="../imagenes/sf_logoRedondo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <img src="../imagenes/sf_logoRedondo.png" class="logo" alt="logo" />
+      </div>
+      <div>
+        <nav class="navBarHeader">
+          <a href="../index.html" class="linkHeader actual">Inicio</a>
+          <a href="nosotros.html" class="linkHeader">Nosotros</a>
+          <a href="servicios.html" class="linkHeader">Servicios</a>
+          <a href="portfolios.html" class="linkHeader">Portafolio</a>
+          <a href="genialab.html" class="linkHeader">GenialLab</a>
+         
+          <a href="contacto.html" target="_blank"
+            class="linkHeader">Contacto</a>
+        </nav>
+      </div>
+      <!-- <a class="menuResp" onclick="mostrarMenu()"><i class="fa-solid fa-bars"></i></a> -->
+
+      <label class="hamburger">
+        <input type="checkbox" id="menuToggle" />
+        <svg viewBox="0 0 32 32">
+          <path
+            class="line line-top-bottom"
+            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+          <path class="line" d="M7 16 27 16"></path>
+        </svg>
+      </label>
+    </header>
+    <section class="bannerGenial">
+      <img src="../imagenes/GenialLab.png" width="100%" alt="Imágen de Banner"/>
+    </section>
+    <section class="presentacion">
+      <h1 class="tituloPresentacion" data-aos="fade-right">Un nuevo mundo te espera!</h1>
+      <div class="cuerpoPresentacion" data-aos="fade-up">
+        <div class="text">
+          <p>
+            Es un obra esencial para educadores y estudiantes interesados en el
+            fascinante mundo de la tecnología y la innovación. Escrito por la
+            Prof. Gisela Fariaz, este libro ofrece una guía para implementar
+            proyectos en el aula, utilizando metodologías ágiles donde se
+            posiciona a los estudiantes como integrantes de diseño y desarrollo
+            donde deben analizar y resolver desafíos.
+            <br />
+            <br />
+            Con 238 páginas de contenido enriquecedor, este libro se convierte
+            en un recurso valioso para aquellos que buscan integrar la
+            programación y la robótica en su enseñanza. La estructura clara y el
+            índice detallado permiten una fácil navegación, facilitando la
+            búsqueda de información específica y la planificación de actividades
+            educativas.
+          </p>
+        </div>
+        <div class="fotoLibro">
+          <img src="../imagenes/portada.webp" alt="Imagen de libro"/>
+        </div>
+      </div>
+    </section>
+
+    <section class="comprar">
+      <!-- <div class="titulo">
+        <h2 class="tituloSeccion">Disponible en estas tiendas</h2>
+      </div> -->
+
+      <div class="contenedor-compra">
+        <div class="titulo">
+          <h2 class="tituloSeccion">Disponible en estas tiendas</h2>
+        </div>
+        <div class="tarjetasLibros">
+          <div class="cardGenial" data-aos="fade-up">
+            <img src="../imagenes/book.png" width="40px" class="imgCursos" alt="Icono de Libros"/>
+            <h3 class="tituloLugar">Mythos Libros</h3>
+          
+            <div class="seccionbtn">
+              <a
+                class="btnBook"
+                href="https://www.mythoslibros.com.ar/?srsltid=AfmBOoqo4P7kjvh61m5wExwgqYyZh4HQGvAzTl7mGFOadb_onbr8O93X">
+                Adquirir
+              </a>
+            </div>
+          </div>
+          <div class="cardGenial" data-aos="fade-up">
+            <img src="../imagenes/book.png" width="40px" class="imgCursos" alt="Icono de Libros"/>
+            <h3 class="tituloLugar">La Boutique del Libro</h3>
+           
+            <div class="seccionbtn">
+              <a
+                class="btnBook"
+                href="https://boutiquedellibro.mercadoshops.com.ar/">
+                Adquirir
+              </a>
+            </div>
+          </div>
+
+          <div class="cardGenial" data-aos="fade-up">
+            <img src="../imagenes/book.png" width="40px" class="imgCursos" alt="Icono de Libros"/>
+            <h3 class="tituloLugar">Rayuela Rio Grande</h3>
+         
+            <div class="seccionbtn">
+              <a class="btnBook" href="https://maps.app.goo.gl/zbhhTZKL3BK5oUJBA">Adquirir</a>
+            </div>
+          </div>
+          <div class="cardGenial" data-aos="fade-up">
+            <img src="../imagenes/book.png" width="40px" class="imgCursos" alt="Icono de Libros"/>
+            <h3 class="tituloLugar">EcoLibro</h3>
+          
+            <div class="seccionbtn">
+              <a class="btnBook" href="https://maps.app.goo.gl/ebKykZo3JZ9NATQv7">Adquirir</a>
+            </div>
+          </div>
+          <div class="cardGenial" data-aos="fade-up">
+            <img src="../imagenes/book.png" width="40px" class="imgCursos" alt="Icono de Libros"/>
+            <h3 class="tituloLugar">Mercado Libre</h3>
+           
+            <div class="seccionbtn">
+              <a class="btnBook" href="https://www.mercadolibre.com.ar/robotica-con-arduino-para-docentes/up/MLAU2922438751#polycard_client=search-nordic&searchVariation=MLAU2922438751&wid=MLA1469592219&position=1&search_layout=stack&type=product&tracking_id=90c75583-c6fa-4790-8316-c2b1126d51ba&sid=search">Adquirir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cursos">
+      <h2 class="titulo">Cursos y Capacitaciones</h2>
+      <div class="tarjetasCursos">
+        <div class="cardGenial" data-aos="flip-up">
+          <img src="../imagenes/figma.jpg"  class="imgCursos" alt="Imágen de Curso "/>
+          <h3>Maquetado con Figma</h3>
+          <p class="textCard">
+            Domina el diseño de interfaces con Figma y aprende a crear maquetas
+            web profesionales. En este curso te enseñaremos desde los conceptos
+            básicos hasta técnicas avanzadas de diseño UX/UI, prototipado y
+            colaboración en equipo. ¡ Lleva tus ideas a otro nivel y crea
+            proyectos visualmente impactantes!.
+            <br><br>
+            Dificultad : Principiante
+            <br>
+            Duración : 6 semanas
+
+          </p>
+          <br><br>
+          <div class="seccionPrecio">
+            <h3 class="precio"> $45.000</h3>
+          </div>
+          <div class="seccionbtn">
+            <button class="btnCurso"><a href>Ver Curso</a></button>
+          </div>
+        </div>
+        <div class="cardGenial" data-aos="flip-up">
+          <img src="../imagenes/github.jpg"  class="imgCursos" 
+          alt="Imagen de Curso "/>
+          <h3>Creación y manejo de repositorios</h3>
+          <p class="textCard">
+            Aprende a gestionar el control de versiones con Git y Github desde
+            cero. Este curso, conocerás los camandos básicos de Git, crearás tu
+            primer archivo README y subirás tu proyecto a Github paso a paso.
+            Ideal para quienes quieren comenzar a trabajar de manera
+            colaborativa y profesional en el desarrollo de software.
+            <br><br>
+            Dificultad : Principiante
+            <br>
+            Duración : 2 semanas
+          </p>
+          <br><br>
+          <div class="seccionPrecio">
+            <h3 class="precio">$45.000</h3>
+          </div>
+          <div class="seccionbtn">
+            <button class="btnCurso"><a href>Ver Curso</a></button>
+          </div>
+        </div>
+        <div class="cardGenial" data-aos="flip-up">
+          <img src="../imagenes/programacion.jpg" width="400px"
+            class="imgCursos" 
+            alt="Imagen de Curso "/>
+          <h3>Desarrollo Web</h3>
+          <p class="textCard">
+            Aprende a crear sitios web desde cero con HTML y CSS. En
+            este curso, te enseñaremos los fundamentos del desarrrollo web,
+            desde la estructura de una página hasta la creación de diseños
+            atractivos y dinámicos. Ideal para principiantes que quieren dar sus
+            primeros pasos en el mundo del desarrollo web.
+            <br><br>
+            Dificultad : Principiante
+            <br>
+            Duración : 6 semanas
+          </p>
+          <br><br>
+          <div class="seccionPrecio">
+            <h3 class="precio">$80.000</h3>
+          </div>
+          <div class="seccionbtn">
+            <button class="btnCurso"><a href>Ver Curso</a></button>
+          </div>
+        </div>
+        <div class="cardGenial" data-aos="flip-up">
+          <img src="../imagenes/python.jpg"  class="imgCursos" 
+          alt="Imagen de Curso "/>
+          <h3>Programación en Python</h3>
+          <p class="textCard">
+            Aprende a programar dede cero con Python, uno de los lenguajes más
+            versátiles y populares. En este curso, comenzarás con lo básico y
+            avanzarás a estructuras fundamentales como condicionales, bucles y
+            funciones. Ideal para quienes iniciarse en la programación de forma
+            sencilla y práctica.
+            <br><br>
+            Dificultad : Principiante
+            <br>
+            Duración : 8 semanas
+          </p>
+          <br><br>
+          <div class="seccionPrecio">
+            <h3 class="precio">$80.000</h3>
+          </div>
+          <div class="seccionbtn">
+            <button class="btnCurso"><a href>Ver Curso</a></button>
+          </div>
+        </div>
+        <div class="cardGenial" data-aos="flip-up">
+          <img src="../imagenes\269257867_11260839.jpg"  class="imgCursos" 
+          alt="Imagen de Curso "/>
+          <h3>Desarrollo web con JS</h3>
+          <p class="textCard">
+            Aprende a programar dede cero con Python, uno de los lenguajes más
+            versátiles y populares. En este curso, comenzarás con lo básico y
+            avanzarás a estructuras fundamentales como condicionales, bucles y
+            funciones. Ideal para quienes iniciarse en la programación de forma
+            sencilla y práctica.
+            <br><br>
+            Dificultad : Principiante
+            <br>
+            Duración : 6 semanas
+          </p>
+          <br><br>
+          <div class="seccionPrecio">
+            <h3 class="precio">$65.000</h3>
+          </div>
+          <div class="seccionbtn">
+            <button class="btnCurso"><a href>Ver Curso</a></button>
+          </div>
+        </div>
+        <div class="cardGenial" data-aos="flip-up">
+          <img src="../imagenes\269257865_11240811.jpg"  class="imgCursos" 
+          alt="Imagen de Curso "/>
+          <h3>Desarrollo con React Js</h3>
+          <p class="textCard">
+            Aprende a programar dede cero con Python, uno de los lenguajes más
+            versátiles y populares. En este curso, comenzarás con lo básico y
+            avanzarás a estructuras fundamentales como condicionales, bucles y
+            funciones. Ideal para quienes iniciarse en la programación de forma
+            sencilla y práctica.
+            <br><br>
+            Dificultad : Principiante
+            <br>
+            Duración : 8 semanas
+          </p>
+          <br><br>
+          <div class="seccionPrecio">
+            <h3 class="precio">$80.000</h3>
+          </div>
+          <div class="seccionbtn">
+            <button class="btnCurso"><a href>Ver Curso</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-contenido">
+        <div class="imgFooter">
+          <img class="logoF" src="../imagenes\LogoCuadrado-removebg-preview.png"
+            width="200px"
+            alt="Logo footer">
+        </div>
+        <nav class="footer-nav">
+          <ul class="footer-nav-lista">
+            <li>
+              <a href="./pages/nosotros.html" class="footer-link">Nosotros</a>
+            </li>
+            <li>
+              <a href="./pages/servicios.html" class="footer-link">Servicios</a>
+            </li>
+            <li>
+              <a href="./pages/portfolio" class="footer-link">Portafolio</a>
+            </li>
+            <li>
+              <a href="./pages/genialLab.html" class="footer-link">GenialLab</a>
+            </li>
+            <li>
+              <a
+                href="./pages/contacto.html"
+                target="_blank"
+                class="footer-link">Contacto</a>
+            </li>
+
+          </ul>
+        </nav>
+
+        <div class="contenedorFooter">
+          <div class="parteFinal">
+            <form class="formularioSuscripcion" id="formSuscripcion">
+              <input
+                id="inputCorreo"
+                type="email"
+                name="correo"
+                placeholder="Ingrese su correo:"
+                required />
+              <button type="submit" id="btnSuscripcion">Suscribirse</button>
+            </form>
+          </div>
+
+          <div class="footer-copyright">
+            <p>&copy; 2024 DigitalMe - Todos los derechos reservados.</p>
+          </div>
+        </div>
+
+      </footer>
+      <div class="containerNav">
+        <a href="#" class="botonnav" data-title="Incio" title="Subir"><i
+            class="fa-solid fa-chevron-up "
+            style="color: #ffffff;"></i></a>
+        <a
+          href="https://wa.me/543513104381?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20sus%20servicios."
+          class="botonnav" data-title="WhatsApp" title="Contáctanos por WhatsApp"><i
+            class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
+        <a href="https://www.instagram.com/digitalme_ssdigitales/"
+          class="botonnav" data-title="Instagram" title="Contáctanos por Instagram"> <i
+            class="fa-brands fa-instagram " style="color: #ffffff;"></i></a>
+        <a href="contacto.html" class="botonnav"
+          data-title="Consultas" title="Consultas"> <i
+            class="fa-solid fa-question" style="color: #ffffff;"></i></a>
+      </div>
+      <div class="contenedorLoader">
+        <div class="spinnerLoader"></div>
+        <img src="../imagenes/sf_logoRedondo.png" alt="logo" class="imgLoader">
+      </div>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+      <script src="https://www.google.com/recaptcha/api.js" async
+        defer></script>
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="../scripts/scriptServicios.js"></script>
+      <script src="../globalScript.js"></script>
+      <script>
+  AOS.init();
+</script>
+
+    </body>
+  </html>

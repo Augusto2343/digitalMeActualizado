@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-GRVR4GQVPM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-GRVR4GQVPM");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="En DigitalMe, nos especializamos en crear soluciones digitales
+    innovadoras y personalizadas que conectan tus metas con
+    experiencias digitales impactantes." />
+    <meta
+      name="keywords"
+      content="Digitalme,desarrollo web,mentoria,innovación,marketing,análisis de datos,servicios digitales,branding,tienda online,portfolios,consultoría estratégica" />
+    <title>DigitalMe</title>
+    <link rel="icon" href="./imagenes/sf_logoRedondo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="estilos/estilosRedes.css">
+    <link rel="stylesheet" href="./estilos/globalStyles.css">
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <img src="./imagenes/sf_logoRedondo.png" class="logo" alt="logo" />
+      </div>
+      <div>
+        <nav class="navBarHeader">
+          <a href="#" class="linkHeader actual">Inicio</a>
+          <a href="pages/nosotros.html" class="linkHeader">Nosotros</a>
+          <a href="pages/servicios.html" class="linkHeader">Servicios</a>
+          <a href="pages/portfolio.html" class="linkHeader">Portafolio</a>
+          <a href="pages/genialab.html" class="linkHeader">GenialLab</a>
+          <a href="pages/contacto.html" target="_blank"
+            class="linkHeader">Contacto</a>
+
+        </nav>
+      </div>
+      <!-- <a class="menuResp" onclick="mostrarMenu()"><i class="fa-solid fa-bars"></i></a> -->
+
+      <label class="hamburger">
+        <input type="checkbox" id="menuToggle">
+        <svg viewBox="0 0 32 32">
+          <path class="line line-top-bottom"
+            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+          <path class="line" d="M7 16 27 16"></path>
+        </svg>
+      </label>
+    </header>
+    <main>
+      <div class="banner">
+        <div class="contenidoBanner">
+          <h1 class="tituloPrincipal">
+            <strong>DigitalMe Agencia de Servicios Digitales</strong>
+          </h1>
+          <a href="pages/nosotros.html" class="btnBanner ">Conózcanos..</a>
+        </div>
+        <a href="pages/contacto.html" class="btnBannerPresupuesto">Solicitar
+          Presupuesto<i
+            class="fa-solid fa-tag"
+            style="color: #ffffff"></i></a>
+      </div>
+
+      <section class="nosotros">
+        <hr class="divisionHeaderMain" />
+        <h2 class="tituloSeccion" data-aos="fade-right">Nosotros</h2>
+        <div class="nosotrosImgTexto">
+          <div class="textoTituloNosotros">
+            <div data-aos="fade-up" data-aos-duration="3000">
+              <p class="marcado">
+                En DigitalMe, nos especializamos en crear soluciones digitales
+                innovadoras y personalizadas que conectan tus metas con
+                experiencias digitales impactantes.<br />
+                <br />
+                Somos un equipo de profesionales altamente capacitados,
+                apasionados por la tecnología y comprometidos en impulsar tu
+                negocio y fortalecer tu presencia digital.<br />
+                <br />
+                Trabajamos con nuestros clientes para diseñar y desarrollar
+                soluciones que no solo satisfacen sus necesidades actuales, sino
+                que también preparan sus negocios para el futuro.<br />
+              </p>
+            </div>
+
+            <div class="seccionBtn">
+              <a href="pages/nosotros.html" class="btnNosotros">Saber más</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="servicios"
+        data-aos="zoom-out-bottom"
+        data-aos-duration="1500">
+        <!-- <hr class="divisionHeaderMain" /> -->
+        <h2 class="tituloSeccion">Tu solución en un solo click </h2>
+
+        <div class="tarjetasServicios">
+          <div class="cardS">
+            <div class="headerCard">
+              <div class="img">
+                <iconify-icon
+                  icon="fluent-mdl2:website"
+                  class="iconoServicio"
+                  style="color: #fff"></iconify-icon>
+              </div>
+              <div class="number">
+                <h2 class="numberService">01</h2>
+              </div>
+            </div>
+            <div class="titulo">
+              <h3 class="tituloService">Desarrollo Web</h3>
+            </div>
+            <div class="parrafo">
+              <p>Ofrecemos desarrollo web personalizado, optimizando tu
+                presencia online con diseño responsive, funcionalidad avanzada y
+                soluciones adaptadas a tus necesidades.</p>
+            </div>
+          </div>
+          <div class="cardS">
+            <div class="headerCard">
+              <div class="img">
+                <iconify-icon
+                  icon="solar:cart-check-broken"
+                  class="iconoServicio"
+                  style="color: #fff"></iconify-icon>
+              </div>
+              <div class="number">
+                <h2 class="numberService">02</h2>
+              </div>
+            </div>
+            <div class="titulo">
+              <h3 class="tituloService">Tienda Online</h3>
+            </div>
+            <div class="parrafo">
+              <p>Desarrollamos tiendas en línea a medida, con pasarelas de pago
+                seguras, diseño atractivo y una experiencia de compra
+                optimizada.</p>
+            </div>
+          </div>
+          <div class="cardS">
+            <div class="headerCard">
+              <div class="img">
+                <iconify-icon
+                  icon="dashicons:portfolio"
+                  class="iconoServicio"
+                  style="color: #fff"></iconify-icon>
+              </div>
+              <div class="number">
+                <h2 class="numberService">03</h2>
+              </div>
+            </div>
+            <div class="titulo">
+              <h3 class="tituloService">Portafolios</h3>
+            </div>
+            <div class="parrafo">
+              <p>Creamos portafolios únicos y profesionales que destacan tu
+                trabajo, combinando diseño visual impactante y una navegación
+                intuitiva y fluida.</p>
+            </div>
+          </div>
+          <div class="cardS">
+            <div class="headerCard">
+              <div class="img">
+                <iconify-icon
+                  icon="nimbus:marketing"
+                  class="iconoServicio"
+                  style="color: #fff"></iconify-icon>
+              </div>
+              <div class="number">
+                <h2 class="numberService">04</h2>
+              </div>
+            </div>
+            <div class="titulo">
+              <h3 class="tituloService">Marketing</h3>
+            </div>
+            <div class="parrafo">
+              <p>Impulsamos tu marca con estrategias de marketing digital
+                efectivas, optimizando campañas en redes sociales, SEO y
+                publicidad para aumentar ventas.</p>
+            </div>
+          </div>
+          <div class="cardS">
+            <div class="headerCard">
+              <div class="img">
+                <iconify-icon
+                  icon="fluent:design-ideas-20-regular"
+                  class="iconoServicio"
+                  style="color: #fff"></iconify-icon>
+              </div>
+              <div class="number">
+                <h2 class="numberService">05</h2>
+              </div>
+            </div>
+            <div class="titulo">
+              <h3 class="tituloService">Diseño Gráfico</h3>
+            </div>
+            <div class="parrafo">
+              <p>Desarrollamos ideas visuales impactantes y a medida, creando
+                identidades únicas que elevan la presencia y esencia de tu
+                marca.</p>
+            </div>
+          </div>
+          <div class="cardS">
+            <div class="headerCard">
+              <div class="img">
+                <iconify-icon
+                  icon="hugeicons:chart-line-data-02"
+                  class="iconoServicio"
+                  style="color: #fff"></iconify-icon>
+              </div>
+              <div class="number">
+                <h2 class="numberService">06</h2>
+              </div>
+            </div>
+            <div class="titulo">
+              <h3 class="tituloService">Análisis de Datos</h3>
+            </div>
+            <div class="parrafo">
+              <p>Convertimos datos en conocimiento estratégico para descubrir
+                oportunidades, predecir tendencias y optimizar decisiones clave
+                en tu negocio.</p>
+            </div>
+          </div>
+          <div class="cardS">
+            <div class="headerCard">
+              <div class="img">
+                <iconify-icon
+                  icon="line-md:compass-twotone-loop"
+                  class="iconoServicio"
+                  style="color: #fff"></iconify-icon>
+              </div>
+              <div class="number">
+                <h2 class="numberService">07</h2>
+              </div>
+            </div>
+            <div class="titulo">
+              <h3 class="tituloService">Consultoria Estratégica</h3>
+            </div>
+            <div class="parrafo">
+              <p>Ofrecemos consultoría estratégica personalizada, ayudando a tu
+                negocio a crecer mediante análisis profundo, planificación
+                efectiva y soluciones innovadoras.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- <hr class="divisionHeaderMain" /> -->
+      <section class="carousel">
+        <h2 class="tituloSeccion espAb">Potenciado por estas tecnologías</h2>
+        <div class="carousel-container">
+          <div class="carousel-track">
+            <i class="carousel-item fa-brands fa-python"></i>
+            <i class="carousel-item fa-brands fa-angular"></i>
+            <i class="carousel-item fa-brands fa-node"></i>
+            <i class="carousel-item cib--mysql"></i>
+            <i class="carousel-item fa-brands fa-angular"></i>
+            <i class="carousel-item fa-brands fa-html5"></i>
+            <i class="carousel-item fa-brands fa-css3-alt"></i>
+            <i class="carousel-item fa-brands fa-git-alt"></i>
+            <iconify-icon
+              icon="simple-icons:tableau"
+              style="color: #707070"></iconify-icon>
+            <iconify-icon
+              icon="simple-icons:looker"
+              style="color: #707070"></iconify-icon>
+            <iconify-icon
+              icon="file-icons:microsoft-excel"
+              style="color: #707070"></iconify-icon>
+            <iconify-icon
+              icon="simple-icons:googlesheets"
+              style="color: #707070"></iconify-icon>
+            <iconify-icon
+              icon="devicon-plain:microsoftsqlserver-wordmark"
+              style="color: #707070"></iconify-icon>
+            <iconify-icon
+              icon="hugeicons:office-365"
+              style="color: #707070"></iconify-icon>
+            <span class="logos--microsoft-power-bi"></span>
+            <iconify-icon
+              icon="simple-icons:express"
+              style="color: #707070"></iconify-icon>
+            <iconify-icon
+              icon="devicon-plain:django-wordmark"
+              style="color: #707070"></iconify-icon>
+            <iconify-icon
+              icon="simple-icons:vite"
+              style="color: #707070"></iconify-icon>
+            <i class="carousel-item fa-brands fa-python"></i>
+            <i class="carousel-item fa-brands fa-react"></i>
+            <i class="carousel-item fa-brands fa-node"></i>
+            <i class="carousel-item cib--mysql"></i>
+            <i class="carousel-item fa-brands fa-angular"></i>
+            <i class="carousel-item fa-brands fa-html5"></i>
+            <i class="carousel-item fa-brands fa-css3-alt"></i>
+            <i class="carousel-item fa-brands fa-git-alt"></i>
+            <iconify-icon
+              icon="simple-icons:tableau"
+              style="color: #707070"></iconify-icon>
+            <iconify-icon
+              icon="simple-icons:looker"
+              style="color: #707070"></iconify-icon>
+            <iconify-icon
+              icon="file-icons:microsoft-excel"
+              style="color: #707070"></iconify-icon>
+            <iconify-icon
+              icon="simple-icons:googlesheets"
+              style="color: #707070"></iconify-icon>
+            <iconify-icon
+              icon="devicon-plain:microsoftsqlserver-wordmark"
+              style="color: #707070"></iconify-icon>
+            <iconify-icon
+              icon="hugeicons:office-365"
+              style="color: #707070"></iconify-icon>
+            <span class="logos--microsoft-power-bi"></span>
+            <iconify-icon
+              icon="simple-icons:express"
+              style="color: #707070"></iconify-icon>
+            <iconify-icon
+              icon="devicon-plain:django-wordmark"
+              style="color: #707070"></iconify-icon>
+            <iconify-icon
+              icon="simple-icons:vite"
+              style="color: #707070"></iconify-icon>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccNovedades">
+        <h2 class="tituloSeccion espAr">Novedades</h2>
+        <div class="cartasNovedades">
+          <div class="cartaNovedad" data-aos="fade-up">
+            <img src="imagenes\LibroMami.png" alt="imagen de libro GenialLab Programacion y Robotica." class="imgNovedad" />
+            <h3 class="tituloNovedad">Programación y robótica</h3>
+            <p class="parrafoNovedad">
+              Descubre GenialLab: Programación y Robótica, una guía práctica
+              para docentes que integra proyectos STEAM, metodologías ágiles y
+              grillas de evaluación por proyecto, fomentando aprendizaje
+              creativo, trabajo en equipo y resolución de problemas.
+            </p>
+            <a
+              href="https://www.instagram.com/p/DDKoTs4pPOv/"
+              target="_blank"
+              class="linkNovedad">Mas info.</a>
+          </div>
+
+          <div class="cartaNovedad" data-aos="fade-down">
+            <img
+              src="./imagenes/cursos/tutoriales.png"
+              alt="imagen de tutorial de Power BI."
+              class="imgNovedad" />
+            <h3 class="tituloNovedad">Tutoriales</h3>
+            <p class="parrafoNovedad">
+              Aprende a crear gráficos TOPN en Power BI y optimiza el análisis
+              visual de tus datos con este tutorial.
+            </p>
+            <a
+              href="https://youtu.be/wxWFg2jE2Ww?si=I-kraTy9Fpwae5ke"
+              class="linkNovedad"
+              >Ver video.</a>
+          </div>
+        </div>
+      </section>
+      <section class="crearPagina">
+        <div class="cinta-wrapper">
+          <div class="cinta">
+            <div class="cinta-contenido">
+           
+              <span>🚀 ¡Ahora Disponible! 🚀</span>
+              <span>🚀 ¡Ahora Disponible! 🚀</span>
+              <span>🚀 ¡Ahora Disponible! 🚀</span>
+              <span>🚀 ¡Ahora Disponible! 🚀</span>
+              <span>🚀 ¡Ahora Disponible! 🚀</span>
+           
+            </div>
+            <div class="cinta-contenido">
+              <span>🚀 ¡Ahora Disponible! 🚀</span>
+              <span>🚀 ¡Ahora Disponible! 🚀</span>
+              <span>🚀 ¡Ahora Disponible! 🚀</span>
+              <span>🚀 ¡Ahora Disponible! 🚀</span>
+              <span>🚀 ¡Ahora Disponible! 🚀</span>
+            </div>
+          </div>
+        </div>
+        <div class="containerPresu">
+          <p>Diseña la web de tus sueños sin complicaciones. Elige solo lo que necesitas y construye tu sitio web con un par de clics. Nosotros hacemos el resto.</p>
+          <a href="pages/presupuesto.html" class="btnPresu" title="Personaliza y presupuesta">¡Empieza a Crear!</a>
+        </div>
+        <div class="cinta-wrapper">
+          <div class="cinta">
+            <div class="cinta-contenido">
+              <span>🚀 ¡Ahora Disponible! 🚀</span>
+              <span>🚀 ¡Ahora Disponible! 🚀</span>
+              <span>🚀 ¡Ahora Disponible! 🚀</span>
+              <span>🚀 ¡Ahora Disponible! 🚀</span>
+              <span>🚀 ¡Ahora Disponible! 🚀</span>
+            </div>
+            <div class="cinta-contenido">
+              <span>🚀 ¡Ahora Disponible! 🚀</span>
+              <span>🚀 ¡Ahora Disponible! 🚀</span>
+              <span>🚀 ¡Ahora Disponible! 🚀</span>
+              <span>🚀 ¡Ahora Disponible! 🚀</span>
+              <span>🚀 ¡Ahora Disponible! 🚀</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="equipoTrabajo">
+        <h2 class="tituloSeccion">Nuestro Equipo</h2>
+        <div class="equipo">
+          <div class="card" data-aos="fade-down" id="cardFadeRight">
+            <div class="card__img">
+              <img
+                src="imagenes/patternpad-2025-02-15-12-47-03.svg"
+                width="100%"
+                height="200px"
+                alt="Imagen de decoracion con patrón" />
+            </div>
+            <div class="card__avatar">
+              <img src="imagenes/equipo/Fotos Equipo/1.png" class="imgPerfil"
+                width="100px"
+                alt="Imagen de perfil de Abraham" />
+            </div>
+            <div class="card__title">Abraham Fariaz</div>
+            <div class="card__subtitle">Coaching</div>
+            <div class="card__wrapper">
+              <button title="Ver LinkedIn" class="card__btn"><i class="fa-brands fa-linkedin-in"
+                  style="color: #000000;"></i></button>
+              <button title="Ver portfolio" class="card__btn "><i class="fa-regular fa-folder"
+                  style="color: #000000;"></i></button>
+            </div>
+          </div>
+
+          <div class="card" data-aos="fade-up">
+            <div class="card__img">
+              <img
+                src="imagenes/patternpad-2025-02-15-13-50-16.svg"
+                width="100%"
+                height="200px" 
+                alt="Imagen de decoracion con patrón"/>
+            </div>
+            <div class="card__avatar">
+              <img src="imagenes/equipo/Fotos Equipo/2.png" class="imgPerfil"
+                width="100px" 
+                alt="Imagen de perfil de Gisela" />
+            </div>
+            <div class="card__title">Gisela Fariaz</div>
+            <div class="card__subtitle">Profesora en Economía <br> Esp. Nivel
+              Sup. Programación </div>
+            <div class="card__wrapper">
+              <button title="Ver LinkedIn" class="card__btn"><i class="fa-brands fa-linkedin-in"
+                  style="color: #000000;"></i></button>
+              <button title="Ver portfolio" class="card__btn "><i class="fa-regular fa-folder"
+                  style="color: #000000;"></i></button>
+            </div>
+          </div>
+
+          <div class="card" data-aos="fade-up">
+            <div class="card__img">
+              <img
+                src="imagenes/patternpad-2025-02-15-13-50-59.svg"
+                width="100%"
+                height="200px" 
+                alt="Imagen de decoracion con patrón"/>
+            </div>
+            <div class="card__avatar">
+              <img src="imagenes/equipo/Fotos Equipo/3.png" class="imgPerfil"
+                width="100px" 
+                alt="Imagen de perfil de Luis" />
+            </div>
+            <div class="card__title">Luis Aguero</div>
+            <div class="card__subtitle">Diseño Grafico</div>
+            <div class="card__wrapper">
+              <button title="Ver LinkedIn" class="card__btn"><i class="fa-brands fa-linkedin-in"
+                  style="color: #000000;"></i></button>
+              <button title="Ver portfolio" class="card__btn "><i class="fa-regular fa-folder"
+                  style="color: #000000;"></i></button>
+            </div>
+          </div>
+
+          <div class="card" data-aos="fade-down" id="cardFadeLeft">
+            <div class="card__img">
+              <img
+                src="imagenes/patternpad-2025-02-15-13-51-22.svg"
+                width="100%"
+                height="200px" 
+                alt="Imagen de decoracion con patrón"/>
+            </div>
+            <div class="card__avatar">
+              <img src="imagenes/equipo/Fotos Equipo/4.png" class="imgPerfil"
+                width="100px" 
+                alt="Imagen de perfil de Agostina" />
+            </div>
+            <div class="card__title">Agostina Noriega</div>
+            <div class="card__subtitle">Developer</div>
+            <div class="card__wrapper">
+              <button title="Ver LinkedIn" class="card__btn"><i class="fa-brands fa-linkedin-in"
+                  style="color: #000000;"></i></button>
+              <button title="Ver portfolio" class="card__btn "><i class="fa-regular fa-folder"
+                  style="color: #000000;"></i></button>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="seccRoadmap">
+          <h2 class="titRoadmap tituloSeccion">Nuestro plan de trabajo.</h2>
+
+          <div class="textoRoadmap">
+            <p class="parrRoadmap" data-aos="zoom-in">
+              Transformamos ideas en realidades digitales con un roadmap
+              impecable: 7 etapas estratégicas que van desde la planificación
+              hasta el soporte continuo. ¡Tu proyecto despega con éxito,
+              innovación y resultados garantizados!
+            </p>
+
+            <a
+              id="contenedorRoadmap"
+              href="./imagenes/roadmap.png"
+              target="_blank"
+              title="Ver el roadmap de trabajo"
+              data-aos="zoom-in"><img src="./imagenes/roadmap.png" alt
+                class="imgRoadmap" /><i
+                class="fa-solid fa-magnifying-glass fa-shake ocultar brillo"></i></a>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <div class="footer-contenido">
+            <div class="imgFooter">
+              <img class="logoF"
+                src="imagenes\LogoCuadrado-removebg-preview.png" width="200px" alt="Logo footer">
+            </div>
+            <nav class="footer-nav">
+              <ul class="footer-nav-lista">
+                <li>
+                  <a href="nosotros.html"
+                    class="footer-link"
+                    title="Ir a Nosotros">Nosotros</a>
+                </li>
+                <li>
+                  <a href="servicios.html"
+                    class="footer-link"
+                    title="Ir a Servicios">Servicios</a>
+                </li>
+                <li>
+                  <a href="portfolio.html" title="Ir a Portafolios" class="footer-link">Portafolio</a>
+                </li>
+                <li>
+                  <a href="genialab.html"
+                    class="footer-link"
+                    title="Ir a GeniaLab">GenialLab</a>
+                </li>
+                <li>
+                  <a
+                    href="contacto.html"
+                    target="_blank"
+                    class="footer-link"
+                    title="Ir a Contacto">Contacto</a>
+                </li>
+
+              </ul>
+            </nav>
+
+            <div class="contenedorFooter">
+              <div class="parteFinal">
+                <form class="formularioSuscripcion" id="formSuscripcion">
+                  <input
+                    id="inputCorreo"
+                    type="email"
+                    name="correo"
+                    placeholder="Ingrese su correo:"
+                    required />
+                  <button title="Suscribirse" type="submit" id="btnSuscripcion">Suscribirse</button>
+                </form>
+              </div>
+
+              <div class="footer-copyright">
+                <p>&copy; 2024 DigitalMe - Todos los derechos reservados.</p>
+              </div>
+            </div>
+
+          </footer>
+
+          <div class="containerNav">
+            <a href="#" class="botonnav" data-title="Incio" title="Subir"><i
+                class="fa-solid fa-chevron-up "
+                style="color: #ffffff;"></i></a>
+            <a
+              href="https://wa.me/543513104381?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20sus%20servicios."
+              class="botonnav" data-title="WhatsApp" title="Contáctanos por WhatsApp"><i
+                class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
+            <a href="https://www.instagram.com/digitalme_ssdigitales/"
+              class="botonnav" data-title="Instagram" title="Contáctanos por Instagram"> <i
+                class="fa-brands fa-instagram " style="color: #ffffff;"></i></a>
+            <a href="pages/contacto.html" class="botonnav"
+              data-title="Consultas" title="Consultas"> <i
+                class="fa-solid fa-question" style="color: #ffffff;"></i></a>
+          </div>
+
+        </main>
+        <div class="contenedorLoader">
+          <div class="spinnerLoader"></div>
+          <img src="../imagenes/sf_logoRedondo.png" alt="logo"
+            class="imgLoader" />
+        </div>
+
+        <script
+          src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async
+          defer></script>
+        <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script
+          src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+          <script src="globalScript.js"></script>
+        <script src="./scriptIndex.js"></script>
+        <script src="./roadmapIndex.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              emailjs.init("MU1bIvZaTDBibybec");
+            });
+          </script>
+
+      </body>
+    </html>

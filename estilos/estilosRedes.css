@@ -1,0 +1,59 @@
+.containerNav {
+    display: flex;
+    flex-direction: column;
+    background-color: #2a2a2a;
+    width: 50px;
+    gap: 20px;
+    height: auto;
+    align-items: center;
+    border-radius: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px;
+}
+
+.botonnav {
+    outline: 0;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.botonnav:hover {
+    transform: translateY(-3px);
+}
+
+
+.botonnav::after {
+    content: attr(data-title);
+    position: absolute;
+    right: 50px; 
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; 
+    z-index: 10;
+}
+
+.botonnav:hover::after {
+    opacity: 1;
+}

@@ -1,0 +1,118 @@
+/* Sección de contacto */
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-image: url("../imagenes/bannerC.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+/* Título del formulario */
+.tituloContacto {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilos del formulario */
+.formularioContacto {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Espacio antes del banner */
+}
+
+/* Contenedor de los inputs */
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+ 
+}
+
+/* Campos de entrada */
+.input,
+.textareaContact {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input:focus,
+.textareaContact:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Área de texto */
+.textareaContact {
+    height: 100px;
+    resize: none;
+}
+
+/* Checkbox */
+.checkBoxLabel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Botón de envío */
+.submitContacto {
+    background-color: #d82400;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    transition: 1s;
+}
+
+.submitContacto:hover {
+    background-color: #f42b03;
+    transform: scale(1.1);
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .formularioContacto {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+@media (max-width:365px){
+    .g-recaptcha {
+        width: 100%;
+        padding: 10px 0; /* Adjust padding as needed */
+        margin: 0; /* Remove margin if necessary */
+    }
+}
+@media (max-width: 365px) {
+    .g-recaptcha {
+        transform: scale(0.80); /* Scale down the reCAPTCHA */
+        transform-origin: center; /* Ensure scaling happens from the center */
+        width: 100%; /* Ensure it fits within the container */
+        padding: 10px 0; /* Adjust padding as needed */
+        margin-left: -15px; /* Remove margin if necessary */
+    }
+}
