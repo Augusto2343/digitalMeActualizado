@@ -619,10 +619,14 @@ iconify-icon:hover {
 
     .banner .tituloPrincipal {
         margin: 20px;
-        text-align: center;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
         justify-content: center;
     }
-
+    .tituloPrincipal strong{
+        text-align: center;
+    }
     .footer-nav-lista {
         flex-wrap: wrap;
     }
@@ -728,4 +732,23 @@ iconify-icon:hover {
 @keyframes glow {
     from { opacity: 0.8; transform: scale(1); }
     to { opacity: 1; transform: scale(1.1); }
+}
+@media (max-width:600px){
+    .tituloPrincipal{
+        padding-top: 70px;
+    }
+    #tituloNovedades{
+        width: 100%;
+        margin: 0;
+    }
+    .seccNovedades{
+        width: 100%;
+        margin:40px 0px;
+    }
+    .formularioSuscripcion{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
 }

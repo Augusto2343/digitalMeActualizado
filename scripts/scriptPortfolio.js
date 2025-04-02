@@ -3,7 +3,7 @@ const cardContainer = document.querySelector(".cards");
 const arrayCards = Array.from(cards);
 cardContainer.onmouseover = (e) => {
     if (e.target.classList.contains("card")) {
-        console.log(e.target.id);
+
         aplicarBlur(e.target.id);
         
     }

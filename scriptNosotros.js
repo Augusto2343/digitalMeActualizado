@@ -10,7 +10,7 @@ const refreshAosEffects =() =>{
     let windowWidth = window.innerWidth;
     if (windowWidth < "775") {
         cartas.forEach((carta) => {
-            console.log(carta.getAttribute("data-aos"));
+ 
             switch (carta.getAttribute("data-aos")) {
 
                 case "fade-left":
@@ -46,22 +46,24 @@ document.addEventListener('DOMContentLoaded', function() {
     Array.from(acc).forEach(function(accordion) {
         accordion.addEventListener("click", function() {
             this.classList.toggle("active");
-
             var icon = this.querySelector(".icon");
+            try{
             if (icon.textContent === "-") {
                 icon.textContent = "+";
                 icon.classList.remove("iconActive");
             } else {
                 icon.textContent = "-";
                 icon.classList.add("iconActive");
+            }}catch{
+                console.log("");
             }
 
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
+            // var panel = this.nextElementSibling;
+            // if (panel.style.maxHeight) {
+            //     panel.style.maxHeight = null;
+            // } else {
+            //     panel.style.maxHeight = panel.scrollHeight + "px";
+            // }
         });
     });
 });

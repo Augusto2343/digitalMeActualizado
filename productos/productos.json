@@ -1,0 +1,16 @@
+[
+   {
+    "id":2,
+    "titulo":"Curso 1",
+    "precio":1000,
+    "stock":2
+
+   },
+   {
+    "id":5,
+    "titulo":"Curso 4",
+    "precio":13400,
+    "stock":2
+
+   }
+]

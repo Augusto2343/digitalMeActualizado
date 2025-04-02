@@ -56,11 +56,14 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Función para mostrar/ocultar el menú
-function mostrarMenu() {
-    navHeader.classList.toggle("mostrarNav");
-    iconoheader.classList.toggle("fa-bars");
-    iconoheader.classList.toggle("fa-x");
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menuToggle");
+    const navHeader = document.querySelector(".navBarHeader");
+
+    menuToggle.addEventListener("change", function () {
+        navHeader.classList.toggle("mostrarNav");
+    });
+});
 const API_URL = 'http://185.173.111.84:3000'; // Asegúrate de que esta URL esté bien
 
 

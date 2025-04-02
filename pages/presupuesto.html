@@ -1,232 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presupuesto</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../estilos/presupuesto.css">
-    <link rel="stylesheet" href="../estilos/estilosRedes.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-        rel="stylesheet" />
-    <link rel="icon" href="../imagenes/sf_logoRedondo.png" />
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer" />
-</head>
-<body>
-    <header class="header">
-        <div>
-            <img src="../imagenes/sf_logoRedondo.png" class="logo"
-                alt="logo" />
-        </div>
-        <div>
-            <nav class="navBarHeader">
-                <a href="../index.html" class="linkHeader actual">Inicio</a>
-                <a href="nosotros.html"
-                    class="linkHeader">Nosotros</a>
-                <a href="servicios.html"
-                    class="linkHeader">Servicios</a>
-                <a href="portfolios.html"
-                    class="linkHeader">Portafolio</a>
-                <a href="genialab.html" class="linkHeader">GenialLab</a>
-              
-                <a href="contacto.html" target="_blank"
-                    class="linkHeader">Contacto</a>
-            </nav>
-        </div>
-        <!-- <a class="menuResp" onclick="mostrarMenu()"><i class="fa-solid fa-bars"></i></a> -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Presupuesto</title>
+        <link rel="stylesheet" href="../estilos/globalStyles.css">
 
-        <label class="hamburger">
-            <input type="checkbox" id="menuToggle" />
-            <svg viewBox="0 0 32 32">
-                <path
-                    class="line line-top-bottom"
-                    d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
-                <path class="line" d="M7 16 27 16"></path>
-            </svg>
-        </label>
-    </header>
-    <h1 class="construye" >Construye tu propia página</h1>
-    <p class="parrafoP">Construye tu web a tu manera: elige, selecciona y personaliza cada sección en segundos.</p>
-    <div class="container">
-        <!-- Panel de Secciones -->
-        <div class="panel">
-            <h2 class="tituloSec">Secciones Disponibles</h2>
-    
-            <div class="secciones">
-                <div class="tarjeta" data-nombre="Header" data-precio="5000">
-                    <img class="iconoP" src="../imagenes/header.png" width="30px"> Header 
+        <link rel="stylesheet" href="../estilos/presupuesto.css">
+        <link rel="stylesheet" href="../estilos/estilosRedes.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet" />
+        <link rel="icon" href="../imagenes/sf_logoRedondo.png" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header class="header">
+            <div>
+                <img src="../imagenes/sf_logoRedondo.png" class="logo"
+                    alt="logo" />
+            </div>
+            <div>
+                <nav class="navBarHeader">
+                    <a href="../index.html" class="linkHeader actual">Inicio</a>
+                    <a href="nosotros.html"
+                        class="linkHeader">Nosotros</a>
+                    <a href="servicios.html"
+                        class="linkHeader">Servicios</a>
+                    <a href="portfolios.html"
+                        class="linkHeader">Portafolio</a>
+                    <a href="genialab.html" class="linkHeader">GenialLab</a>
+
+                    <a href="contacto.html" target="_blank"
+                        class="linkHeader">Contacto</a>
+                </nav>
+            </div>
+            <!-- <a class="menuResp" onclick="mostrarMenu()"><i class="fa-solid fa-bars"></i></a> -->
+
+            <label class="hamburger">
+                <input type="checkbox" id="menuToggle" />
+                <svg viewBox="0 0 32 32">
+                    <path
+                        class="line line-top-bottom"
+                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+        </header>
+        <h1 class="construye">Construye tu propia página</h1>
+        <p class="parrafoP">Construye tu web a tu manera: elige, selecciona y
+            personaliza cada sección en segundos.</p>
+        <div class="container">
+            <!-- Panel de Secciones -->
+            <div class="panel">
+                <h2 class="tituloSec">Secciones Disponibles</h2>
+
+                <div class="secciones">
+                    <div class="tarjeta" data-nombre="Header"
+                        data-precio="5000">
+                        <img class="iconoP" src="../imagenes/header.png"
+                            width="30px"> Header
+                    </div>
+                    <div class="tarjeta" data-nombre="Galería"
+                        data-precio="15000">
+                        <img class="iconoP" src="../imagenes/galeria (2).png"
+                            width="30px"> Galería
+                    </div>
+                    <div class="tarjeta" data-nombre="Formulario"
+                        data-precio="10000">
+                        <img class="iconoP" src="../imagenes/form.png"
+                            width="30px"> Formulario
+                    </div>
+                    <div class="tarjeta" data-nombre="Login"
+                        data-precio="50000">
+                        <img class="iconoP" src="../imagenes/login.png"
+                            width="30px"> Login
+                    </div>
+                    <div class="tarjeta" data-nombre="Mapa" data-precio="15000">
+                        <img class="iconoP" src="../imagenes/mapa.png"
+                            width="30px"> Mapa
+                    </div>
+                    <div class="tarjeta" data-nombre="Newsletter"
+                        data-precio="5000">
+                        <img class="iconoP" src="../imagenes/newsletter.png"
+                            width="30px"> Newsletter
+                    </div>
+                    <div class="tarjeta" data-nombre="AboutMe"
+                        data-precio="5000">
+                        <img class="iconoP" src="../imagenes/aboutme.png"
+                            width="30px"> About me
+                    </div>
+                    <div class="tarjeta" data-nombre="Banner"
+                        data-precio="8000">
+                        <img class="iconoP" src="../imagenes/banners.png"
+                            width="30px"> Banner
+                    </div>
+                    <div class="tarjeta" data-nombre="Carrito"
+                        data-precio="60000">
+                        <img class="iconoP" src="../imagenes/cart.png"
+                            width="30px"> Carrito
+                    </div>
+                    <div class="tarjeta" data-nombre="Carrusel"
+                        data-precio="10000">
+                        <img class="iconoP" src="../imagenes/carrusel.png"
+                            width="30px"> Carrusel
+                    </div>
+                    <div class="tarjeta" data-nombre="Comentarios"
+                        data-precio="30000">
+                        <img src="../imagenes/comment.png" width="30px">
+                        Comentarios
+                    </div>
+                    <div class="tarjeta" data-nombre="DescrProducto"
+                        data-precio="40000">
+                        <img class="iconoP"
+                            src="../imagenes/descripcion-del-producto.png"
+                            width="30px"> Descripción Producto
+                    </div>
+                    <div class="tarjeta" data-nombre="Ecommerce"
+                        data-precio="80000">
+                        <img class="iconoP" src="../imagenes/online-shop.png"
+                            width="30px"> Ecommerce
+                    </div>
+                    <div class="tarjeta" data-nombre="FooterAvanzado"
+                        data-precio="10000">
+                        <img class="iconoP" src="../imagenes/footeravanzado.png"
+                            width="30px"> Footer Avanzado
+                    </div>
+                    <div class="tarjeta" data-nombre="FooterSimple"
+                        data-precio="5000">
+                        <img class="iconoP" src="../imagenes/footersimple.png"
+                            width="30px"> Footer Simple
+                    </div>
+                    <div class="tarjeta" data-nombre="Proyectos"
+                        data-precio="24000">
+                        <img class="iconoP" src="../imagenes/proyectos.png"
+                            width="30px"> Proyectos
+                    </div>
+                    <div class="tarjeta" data-nombre="Redes" data-precio="8000">
+                        <img class="iconoP" src="../imagenes/redes-sociales.png"
+                            width="30px"> Redes
+                    </div>
+                    <div class="tarjeta" data-nombre="Services"
+                        data-precio="15000">
+                        <img class="iconoP"
+                            src="../imagenes/servicios-de-apoyo.png"
+                            width="30px"> Services
+                    </div>
+                    <div class="tarjeta" data-nombre="Video" data-precio="5000">
+                        <img class="iconoP" src="../imagenes/video.png"
+                            width="30px"> Video
+                    </div>
                 </div>
-                <div class="tarjeta" data-nombre="Galería" data-precio="15000">
-                    <img class="iconoP" src="../imagenes/galeria (2).png" width="30px"> Galería 
-                </div>
-                <div class="tarjeta" data-nombre="Formulario" data-precio="10000">
-                    <img class="iconoP" src="../imagenes/form.png" width="30px"> Formulario 
-                </div>
-                <div class="tarjeta" data-nombre="Login" data-precio="50000">
-                    <img class="iconoP" src="../imagenes/login.png" width="30px"> Login 
-                </div>
-                <div class="tarjeta" data-nombre="Mapa" data-precio="15000">
-                    <img class="iconoP" src="../imagenes/mapa.png" width="30px"> Mapa 
-                </div>
-                <div class="tarjeta" data-nombre="Newsletter" data-precio="5000">
-                    <img class="iconoP" src="../imagenes/newsletter.png" width="30px"> Newsletter 
-                </div>
-                <div class="tarjeta" data-nombre="AboutMe" data-precio="5000">
-                    <img class="iconoP" src="../imagenes/aboutme.png" width="30px"> About me 
-                </div>
-                <div class="tarjeta" data-nombre="Banner" data-precio="8000">
-                    <img class="iconoP" src="../imagenes/banners.png" width="30px"> Banner 
-                </div>
-                <div class="tarjeta" data-nombre="Carrito" data-precio="60000">
-                    <img class="iconoP" src="../imagenes/cart.png" width="30px"> Carrito 
-                </div>
-                <div class="tarjeta" data-nombre="Carrusel" data-precio="10000">
-                    <img class="iconoP" src="../imagenes/carrusel.png" width="30px"> Carrusel 
-                </div>
-                <div class="tarjeta" data-nombre="Comentarios" data-precio="30000">
-                    <img src="../imagenes/comment.png" width="30px"> Comentarios 
-                </div>
-                <div class="tarjeta" data-nombre="DescrProducto" data-precio="40000">
-                    <img class="iconoP" src="../imagenes/descripcion-del-producto.png" width="30px"> Descripción Producto 
-                </div>
-                <div class="tarjeta" data-nombre="Ecommerce" data-precio="80000">
-                    <img class="iconoP" src="../imagenes/online-shop.png" width="30px"> Ecommerce 
-                </div>
-                <div class="tarjeta" data-nombre="FooterAvanzado" data-precio="10000">
-                    <img class="iconoP" src="../imagenes/footeravanzado.png" width="30px"> Footer Avanzado
-                </div>
-                <div class="tarjeta" data-nombre="FooterSimple" data-precio="5000">
-                    <img class="iconoP" src="../imagenes/footersimple.png" width="30px"> Footer Simple
-                </div>
-                <div class="tarjeta" data-nombre="Proyectos" data-precio="24000">
-                    <img class="iconoP" src="../imagenes/proyectos.png" width="30px"> Proyectos 
-                </div>
-                <div class="tarjeta" data-nombre="Redes" data-precio="8000">
-                    <img class="iconoP" src="../imagenes/redes-sociales.png" width="30px"> Redes 
-                </div>
-                <div class="tarjeta" data-nombre="Services" data-precio="15000">
-                    <img class="iconoP" src="../imagenes/servicios-de-apoyo.png" width="30px"> Services 
-                </div>
-                <div class="tarjeta" data-nombre="Video" data-precio="5000">
-                    <img class="iconoP" src="../imagenes/video.png" width="30px"> Video 
+            </div>
+
+            <!-- Hoja en blanco -->
+            <div class="hoja">
+                <h2 class="tituloSec">Vista Previa</h2>
+                <div id="contenido-hoja">
+
                 </div>
             </div>
         </div>
 
-        <!-- Hoja en blanco -->
-        <div class="hoja">
-            <h2 class="tituloSec">Vista Previa</h2>
-            <div id="contenido-hoja">
-             
-            </div>
+        <!-- Precio Final -->
+        <div class="precio-final">
+            <h2>Precio Estimativo: $<span id="precio-total">0</span></h2>
+
         </div>
-    </div>
-
-    <!-- Precio Final -->
-    <div class="precio-final">
-        <h2>Precio Estimativo: $<span id="precio-total">0</span></h2>
-    </div>
-    <div class="contactoPresupuesto">
-        <a href="contacto.html" class="btnPresupuesto" >Solicitar Presupuesto</a>
-    </div>
-
-    <footer class="footer">
-        <div class="footer-contenido">
-            <div class="imgFooter">
-                <img class="logoF"
-                    src="../imagenes/LogoCuadrado-removebg-preview.png"
-                    width="200px">
+        <div class="contactoPresupuesto">
+            <a id="mostrarPresupuesto" class="btnPresupuesto">Generar
+                Presupuesto</a>
+            <a href="contacto.html" class="btnPresupuesto">Solicitar Ayuda</a>
+        </div>
+        <section class="seccionPresupuesto">
+        <div id="presupuesto">
+            <div class="headerPresu">
+                <img src="../imagenes/sf_logoRedondo.png" class="logo"
+                    alt="logo">
+                <h2 class="tituloPresu">Presupuesto Estimativo</h2>
+           
             </div>
-            <nav class="footer-nav">
-                <ul class="footer-nav-lista">
-                    <li>
-                        <a href="./pages/nosotros.html"
-                            class="footer-link">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="./pages/servicios.html"
-                            class="footer-link">Servicios</a>
-                    </li>
-                    <li>
-                        <a href="./pages/portfolio"
-                            class="footer-link">Portafolio</a>
-                    </li>
-                    <li>
-                        <a href="./pages/genialLab.html"
-                            class="footer-link">GenialLab</a>
-                    </li>
-                    <li>
-                        <a
-                            href="./pages/contacto.html"
-                            target="_blank"
-                            class="footer-link">Contacto</a>
-                    </li>
-
-                </ul>
-            </nav>
-
-            <div class="contenedorFooter">
-                <div class="parteFinal">
-                    <form class="formularioSuscripcion"
-                        id="formSuscripcion">
-                        <input
-                            id="inputCorreo"
-                            type="email"
-                            name="correo"
-                            placeholder="Ingrese su correo:"
-                            required />
-                        <button type="submit"
-                            id="btnSuscripcion">Suscribirse</button>
-                    </form>
-                </div>
-
-                <div class="footer-copyright">
-                    <p>&copy; 2024 DigitalMe - Todos los derechos
-                        reservados.</p>
-                </div>
+            <div class="fechaPresu">Fecha: <span id="fechaActual"></span></div>
+            <div class="importante">
+                <p>Este presupuesto es solamente estimativo y tiene carácter
+                    orientativo. Los precios aquí presentados no son definitivos
+                    y pueden variar según los detalles finales del proyecto.
+                    Para un presupuesto definitivo, es necesario conversar y
+                    definir claramente todos los aspectos relacionados con el
+                    trabajo solicitado.</p>
+            </div>
+            <table border ="1" width="100%">
+                <thead>
+                    <tr>
+                        <th> Cantidad</th>
+                        <th>Item No.</th>
+                        <th>Elemento</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody id="itemsLista"></tbody>
+            </table>
+            <p><strong>Subtotal:</strong> $<span id="subtotal">0.00</span></p>
+            <p><strong>IVA (10%):</strong> $<span id="iva">0.00</span></p>
+            <p><strong>Total:</strong> $<span id="total">0.00</span></p>
+            <button onclick="generarPDF()">Descargar PDF</button>
+            
+            <hr>
+            <div class="footerPresupuesto">
+                <p>https://digitalme.com.ar</p>
+                <p>@digitalme</p>
             </div>
 
-        </footer>
-    <div class="containerNav">
-        <a href="#" class="botonnav" data-title="Incio"><i
-                class="fa-solid fa-chevron-up "
-                style="color: #ffffff;"></i></a>
-        <a
-            href="https://wa.me/543513104381?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20sus%20servicios."
-            class="botonnav" data-title="WhatsApp"><i
-                class="fa-brands fa-whatsapp"
-                style="color: #ffffff;"></i></a>
-        <a href="https://www.instagram.com/digitalme_ssdigitales/"
-            class="botonnav" data-title="Instagram"> <i
-                class="fa-brands fa-instagram "
-                style="color: #ffffff;"></i></a>
-        <a href="contacto.html" class="botonnav"
-            data-title="Consultas"><i
-                class="fa-solid fa-question"
-                style="color: #ffffff;"></i></a>
-    </div>
-    <div class="contenedorLoader">
-        <div class="spinnerLoader"></div>
-        <img src="../imagenes/sf_logoRedondo.png" alt="logo" class="imgLoader">
-      </div>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../app.js"></script>
-    <script>
+        </div>
+    </section>  
+        <footer class="footer">
+            <div class="footer-contenido">
+                <div class="imgFooter">
+                    <img class="logoF"
+                        src="../imagenes/sf_logoRedondo.png"
+                        width="200px">
+                </div>
+                <nav class="footer-nav">
+                    <ul class="footer-nav-lista">
+                        <li>
+                            <a href="./pages/nosotros.html"
+                                class="footer-link">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="./pages/servicios.html"
+                                class="footer-link">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="./pages/portfolio"
+                                class="footer-link">Portafolio</a>
+                        </li>
+                        <li>
+                            <a href="./pages/genialLab.html"
+                                class="footer-link">GenialLab</a>
+                        </li>
+                        <li>
+                            <a
+                                href="./pages/contacto.html"
+                                target="_blank"
+                                class="footer-link">Contacto</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <div class="contenedorFooter">
+                    <div class="parteFinal">
+                        <form class="formularioSuscripcion"
+                            id="formSuscripcion">
+                            <input
+                                id="inputCorreo"
+                                type="email"
+                                name="correo"
+                                placeholder="Ingrese su correo:"
+                                required />
+                            <button type="submit"
+                                id="btnSuscripcion">Suscribirse</button>
+                        </form>
+                    </div>
+
+                    <div class="footer-copyright">
+                        <p>&copy; 2024 DigitalMe - Todos los derechos
+                            reservados.</p>
+                    </div>
+                </div>
+
+            </footer>
+            <div class="containerNav">
+                <a href="#" class="botonnav" data-title="Incio"><i
+                        class="fa-solid fa-chevron-up "
+                        style="color: #ffffff;"></i></a>
+                <a
+                    href="https://wa.me/543513104381?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20sus%20servicios."
+                    class="botonnav" data-title="WhatsApp"><i
+                        class="fa-brands fa-whatsapp"
+                        style="color: #ffffff;"></i></a>
+                <a href="https://www.instagram.com/digitalme_ssdigitales/"
+                    class="botonnav" data-title="Instagram"> <i
+                        class="fa-brands fa-instagram "
+                        style="color: #ffffff;"></i></a>
+                <a href="contacto.html" class="botonnav"
+                    data-title="Consultas"><i
+                        class="fa-solid fa-question"
+                        style="color: #ffffff;"></i></a>
+            </div>
+            <div class="contenedorLoader">
+                <div class="spinnerLoader"></div>
+                <img src="../imagenes/sf_logoRedondo.png" alt="logo"
+                    class="imgLoader">
+            </div>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script src="../app.js"></script>
+            <script>
         AOS.init();
       </script>
-     
-      <!-- <script src="../scripts/scriptGlobal.js"></script> -->
-      <!-- <script src="../scripts/servicios.js"></script> -->
-      <script src="../scripts/scriptServicios.js"></script>
-    </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="../scripts/presupuesto.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-</body>
+            <!-- <script src="../scripts/scriptGlobal.js"></script> -->
+            <!-- <script src="../scripts/servicios.js"></script> -->
+            <script src="../scripts/scriptServicios.js"></script>
+        </main>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="../scripts/presupuesto.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script >
+      let items = [];
+      let contador = 1;
+      let precioTotal = 0;
+      let seleccionadas = new Set();
+
+      document.querySelectorAll('.tarjeta').forEach(tarjeta => {
+        tarjeta.addEventListener('click', () => {
+          const nombre = tarjeta.getAttribute('data-nombre');
+          const precio = parseInt(tarjeta.getAttribute('data-precio'));
+
+          if(seleccionadas.has(nombre)){
+            Swal.fire({
+                icon:"warning",
+                title:"Sección ya agregada",
+                text:`La seccion "${nombre}" ya esta en la lista`,
+                confirmButtonText:"Entendido"
+            });
+            return;
+          }
+          seleccionadas.add(nombre);
+          const item = {
+            id: contador++,
+            qty: 1,
+            description: nombre,
+            cost: precio.toFixed(2)
+          };
+
+          items.push(item);
+          actualizarPresupuesto();
+          precioTotal += precio;
+          document.getElementById('precio-total').textContent = precioTotal;
+
+
+        //   const nuevoElemento = document.createElement('div');
+        //   nuevoElemento.textContent = nombre;
+        //   document.getElementById('contenido-hoja').appendChild(nuevoElemento);    
+        });
+      });
+
+
+function eliminarElemento(id) {
+    Swal.fire({
+        title: "¿Seguro que quieres eliminar este ítem?",
+        text: "Se restará del total.",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#d33",
+        cancelButtonColor: "#3085d6",
+        confirmButtonText: "Sí, eliminar",
+        cancelButtonText: "Cancelar"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            const index = items.findIndex(item => item.id === id);
+
+            if (index !== -1) {
+                // Restar el costo del item eliminado
+                precioTotal -= parseFloat(items[index].cost);
+                document.getElementById('precio-total').textContent = precioTotal;
+
+                // Eliminar del array
+                items.splice(index, 1);
+
+                // Actualizar la tabla
+                actualizarPresupuesto();
+
+                Swal.fire({
+                    icon: "success",
+                    title: "Ítem eliminado",
+                    text: "Se ha eliminado correctamente.",
+                    confirmButtonText: "OK"
+                });
+            }
+        }
+    });
+}
+
+    function actualizarPresupuesto() {
+    let tbody = document.getElementById('itemsLista');
+    tbody.innerHTML = '';
+
+    let subtotal = 0;
+    items.forEach(item => {
+        subtotal += parseFloat(item.cost);
+        let fila = document.createElement("tr");
+
+        fila.innerHTML = `
+            <td>X${item.qty}</td>
+            <td>${item.id}</td>
+            <td>${item.description}</td>
+            <td>$${item.cost}</td>
+        
+        `;
+
+        tbody.appendChild(fila);
+    });
+
+    let iva = subtotal * 0.10;
+    let total = subtotal + iva;
+
+    document.getElementById('subtotal').textContent = subtotal.toFixed(2);
+    document.getElementById('iva').textContent = iva.toFixed(2);
+    document.getElementById('total').textContent = total.toFixed(2);
+
+    // Agregar eventos de eliminar a los botones recién creados
+    document.querySelectorAll('.btn-eliminar').forEach(boton => {
+        boton.addEventListener('click', function () {
+            let id = parseInt(this.getAttribute('data-id'));
+            eliminarElemento(id);
+        });
+    });
+    document.getElementById('mostrarPresupuesto').addEventListener('click', () => {
+        document.getElementById('presupuesto').style.display = 'block';
+      });
+}
+
+function generarPDF() {
+    const elemento = document.getElementById('presupuesto');
+   // <img src="data:image/png;base64,{{base64_image_data}}" alt="Imagen del presupuesto" />
+    const opciones = {
+  margin: [10, 10, 10, 10],
+  filename: 'Presupuesto.pdf',
+  html2canvas: { scale: 1.5 },
+  jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+  pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+};
+
+
+    html2pdf()
+      .from(elemento)
+      .set(opciones)
+      .save();
+  }
+//   import emailjs from '@emailjs/browser';
+
+// function enviarPDF() {
+//     const elemento = document.getElementById('contenido');
+//     html2pdf().from(elemento).toPdf().get('pdf').then((pdf) => {
+//         const blob = pdf.output('blob');
+//         const formData = new FormData();
+//         formData.append('file', blob, 'presupuesto.pdf');
+
+//         emailjs.sendForm('service_fbehjlb', 'template_gzcf66t', formData, 'v8rb-IIgLGG3YPR0H')
+//             .then(response => console.log('Correo enviado', response))
+//             .catch(error => console.log('Error al enviar correo', error));
+//     });
+// }
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+        <script>
+        const hoy = new Date();
+        const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('fechaActual').innerText = hoy.toLocaleDateString('es-ES', opciones);
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="../scripts/scriptEnvPresupuesto.js" type="module"></script>
+<script src="../globalScript.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        emailjs.init("v8rb-IIgLGG3YPR0H"); // Inicializa EmailJS con tu user ID
+    });
+</script>
+    </body>
 </html>

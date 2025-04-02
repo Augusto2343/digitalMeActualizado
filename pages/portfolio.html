@@ -132,11 +132,11 @@
                             class="footer-link">Servicios</a>
                     </li>
                     <li>
-                        <a href="portfolio"
+                        <a href="#"
                             class="footer-link">Portafolio</a>
                     </li>
                     <li>
-                        <a href="genialLab.html"
+                        <a href="genialab.html"
                             class="footer-link">GenialLab</a>
                     </li>
                     <li>
@@ -150,19 +150,7 @@
             </nav>
 
             <div class="contenedorFooter">
-                <div class="parteFinal">
-                    <form class="formularioSuscripcion"
-                        id="formSuscripcion">
-                        <input
-                            id="inputCorreo"
-                            type="email"
-                            name="correo"
-                            placeholder="Ingrese su correo:"
-                            required />
-                        <button type="submit"
-                            id="btnSuscripcion">Suscribirse</button>
-                    </form>
-                </div>
+
 
                 <div class="footer-copyright">
                     <p>&copy; 2024 DigitalMe - Todos los derechos
@@ -185,15 +173,25 @@
               data-title="Consultas" title="Consultas"> <i
                 class="fa-solid fa-question" style="color: #ffffff;"></i></a>
           </div>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="../app.js"></script>
-        <script>
-            AOS.init();
-          </script>
-           <div class="contenedorLoader">
+          <div class="contenedorLoader">
             <div class="spinnerLoader"></div>
             <img src="../imagenes/sf_logoRedondo.png" alt="logo" class="imgLoader">
           </div>
+
+
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        emailjs.init("MU1bIvZaTDBibybec"); // Inicializa EmailJS con tu user ID
+    });
+</script>
+        <script>
+            AOS.init();
+          </script>
+
           <script
           type="module"
           src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -207,5 +205,6 @@
     <!-- Firebase-->
     <script type="module" src="../scripts/scriptPortfolio.js"></script>
     <script src="../globalScript.js"></script>
+
 </body>
 </html>

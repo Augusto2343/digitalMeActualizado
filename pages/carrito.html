@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carrito">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilos/globalStyles.css">
+    <link rel="stylesheet" href="../estilos/carrito.css">
+    <link rel="stylesheet" href="../estilos/estilosRedes.css">
+    <link rel="icon" href="./imagenes/sf_logoRedondo.png" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+        rel="stylesheet" />
+    <body>
+        <header class="header">
+            <div>
+                <img src="../imagenes/sf_logoRedondo.png" class="logo"
+                    alt="logo" />
+            </div>
+            <div>
+                <nav class="navBarHeader">
+                    <a href="../index.html"
+                        class="linkHeader actual">Inicio</a>
+                    <a href="nosotros.html"
+                        class="linkHeader">Nosotros</a>
+                    <a href="servicios.html"
+                        class="linkHeader">Servicios</a>
+                    <a href="portfolios.html"
+                        class="linkHeader">Portafolio</a>
+                    <a href="genialab.html" class="linkHeader">GenialLab</a>
+                   
+                    <a href="contacto.html" target="_blank"
+                        class="linkHeader">Contacto</a>
+                </nav>
+            </div>
+            <!-- <a class="menuResp" onclick="mostrarMenu()"><i class="fa-solid fa-bars"></i></a> -->
+
+            <label class="hamburger">
+                <input type="checkbox" id="menuToggle" />
+                <svg viewBox="0 0 32 32">
+                    <path
+                        class="line line-top-bottom"
+                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+        </header>
+
+    <h1>Carrito</h1>
+        <section class="productsCards">
+
+
+        </section>
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div class="imgFooter">
+                <img class="logoF"
+                    src="../imagenes\LogoCuadrado-removebg-preview.png"
+                    width="200px"
+                    alt="Logo footer">
+            </div>
+            <nav class="footer-nav">
+                <ul class="footer-nav-lista">
+                    <li>
+                        <a href="./pages/nosotros.html"
+                            class="footer-link">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="./pages/servicios.html"
+                            class="footer-link">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="./pages/portfolio"
+                            class="footer-link">Portafolio</a>
+                    </li>
+                    <li>
+                        <a href="./pages/genialLab.html"
+                            class="footer-link">GenialLab</a>
+                    </li>
+                    <li>
+                        <a
+                            href="./pages/contacto.html"
+                            target="_blank"
+                            class="footer-link">Contacto</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="contenedorFooter">
+                <div class="parteFinal">
+                    <form class="formularioSuscripcion"
+                        id="formSuscripcion">
+                        <input
+                            id="inputCorreo"
+                            type="email"
+                            name="correo"
+                            placeholder="Ingrese su correo:"
+                            required />
+                        <button type="submit"
+                            id="btnSuscripcion">Suscribirse</button>
+                    </form>
+                </div>
+
+                <div class="footer-copyright">
+                    <p>&copy; 2024 DigitalMe - Todos los derechos
+                        reservados.</p>
+                </div>
+            </div>
+
+        </footer>
+        <div class="containerNav">
+            <a href="#" class="botonnav" data-title="Incio"><i
+                    class="fa-solid fa-chevron-up "
+                    style="color: #ffffff;"
+                    title="Subir"></i></a>
+            <a
+                href="https://wa.me/543513104381?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20sus%20servicios."
+                class="botonnav" data-title="WhatsApp"><i
+                    class="fa-brands fa-whatsapp"
+                    style="color: #ffffff;"
+                    title="Ir al Whatsapp"></i></a>
+            <a href="https://www.instagram.com/digitalme_ssdigitales/"
+                class="botonnav" data-title="Instagram"> <i
+                    class="fa-brands fa-instagram "
+                    style="color: #ffffff;"
+                    title="Ir al Instagram"></i></a>
+            <a href="contacto.html" class="botonnav"
+                data-title="Consultas"><i
+                    class="fa-solid fa-question"
+                    style="color: #ffffff;"
+                    title="Ir a contacto"></i></a>
+        </div>
+        <div class="contenedorLoader">
+            <div class="spinnerLoader"></div>
+            <img src="../imagenes/sf_logoRedondo.png" alt="logo"
+                class="imgLoader">
+        </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../globalScript.js"></script>
+    <script src="../scripts/carrito.js"></script>
+</body>
+</html>
