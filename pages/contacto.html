@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contacto</title>
-
+        <meta
+        name="description"
+        content="Contacto de DigitalMe." />
         <link rel="stylesheet" href="../estilos/globalStyles.css">
         <link rel="stylesheet" href="../estilos/contacto.css">
         <link rel="stylesheet" href="../estilos/estilosRedes.css">
-        <link rel="icon" href="./imagenes/sf_logoRedondo.png" />
+        <link rel="icon" href="../imagenes/sf_logoRedondo.png" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -92,6 +94,7 @@
                     <div class="imgFooter">
                         <img class="logoF"
                             src="../imagenes\LogoCuadrado-removebg-preview.png"
+                            alt="Logo footer"
                             width="200px">
                     </div>
                     <nav class="footer-nav">
@@ -138,35 +141,28 @@
                         </div>
 
                         <div class="footer-copyright">
-                            <p>&copy; 2024 DigitalMe - Todos los derechos
+                            <p>&copy; <span id="year"> </span> DigitalMe - Todos los derechos
                                 reservados.</p>
                         </div>
                     </div>
 
                 </footer>
                 <div class="containerNav">
-                    <a href="#" class="botonnav" data-title="Incio"><i
-                            class="fa-solid fa-chevron-up "
-                            style="color: #ffffff;"></i></a>
+                    <a href="#" class="botonnav" data-title="Incio" title="Subir"><i
+                        class="fa-solid fa-chevron-up "
+                        style="color: #ffffff;"></i></a>
                     <a
-                        href="https://wa.me/543513104381?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20sus%20servicios."
-                        class="botonnav" data-title="WhatsApp"><i
-                            class="fa-brands fa-whatsapp"
-                            style="color: #ffffff;"></i></a>
+                      href="https://wa.me/543513104381?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20sus%20servicios."
+                      class="botonnav" data-title="WhatsApp" title="Contáctanos por WhatsApp"><i
+                        class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
                     <a href="https://www.instagram.com/digitalme_ssdigitales/"
-                        class="botonnav" data-title="Instagram"> <i
-                            class="fa-brands fa-instagram "
-                            style="color: #ffffff;"></i></a>
-                    <a href="contacto.html" class="botonnav"
-                        data-title="Consultas"><i
-                            class="fa-solid fa-question"
-                            style="color: #ffffff;"></i></a>
-                </div>
-                <div class="contenedorLoader">
-                    <div class="spinnerLoader"></div>
-                    <img src="../imagenes/sf_logoRedondo.png" alt="logo"
-                        class="imgLoader">
-                </div>
+                      class="botonnav" data-title="Instagram" title="Contáctanos por Instagram"> <i
+                        class="fa-brands fa-instagram " style="color: #ffffff;"></i></a>
+                    <a href="#" class="botonnav"
+                      data-title="Consultas" title="Consultas"> <i
+                        class="fa-solid fa-question" style="color: #ffffff;"></i></a>
+                  </div>
+        
 
                 <script
                     src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>

@@ -6,6 +6,7 @@ const iconoheader = document.querySelector(".fa-bars");
 
 let lastScrollTop = 0;
 
+document.getElementById("year").textContent = new Date().getFullYear();
 
 
 window.addEventListener('load', function() {

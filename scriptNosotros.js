@@ -99,5 +99,6 @@ formSuscripcion.addEventListener("submit", function(event) {
         });
     });
 });
+refreshAosEffects();
 window.addEventListener("resize", refreshAosEffects);
 window.addEventListener("load", refreshAosEffects);
