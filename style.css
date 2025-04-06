@@ -752,3 +752,12 @@ iconify-icon:hover {
         justify-content: center;
     }
 }
+@media (max-width:475px){
+    .containerPresu{
+        height: 400px;
+    }
+    .containerPresu p{
+        font-size: 18px;
+        width: 80%;
+    }
+}

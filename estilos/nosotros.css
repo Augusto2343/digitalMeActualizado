@@ -9,7 +9,10 @@
 	--circle-duration: calc(900ms * 100 / var(--animation-speed));
 }
 
-
+.contenedorLoader{
+	width: 100vw;
+	height: 100vh;
+}
 
 
 

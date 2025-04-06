@@ -133,6 +133,11 @@ a.btnPresupuesto:hover {
     width: 80%;
 
 }
+.imgBtnHoja{
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+}
 
 #presupuesto {
     width: 210mm;

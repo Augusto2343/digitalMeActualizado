@@ -207,7 +207,7 @@
             <p><strong>Subtotal:</strong> $<span id="subtotal">0.00</span></p>
             <p><strong>IVA (10%):</strong> $<span id="iva">0.00</span></p>
             <p><strong>Total:</strong> $<span id="total">0.00</span></p>
-            <button onclick="generarPDF()">Descargar PDF</button>
+            <button id="descargarPresupuesto" onclick="generarPDF()">Descargar PDF</button>
             
             <hr>
             <div class="footerPresupuesto">
@@ -221,9 +221,8 @@
             <div class="footer-contenido">
                 <div class="imgFooter">
                     <img class="logoF"
-                        src="../imagenes/sf_logoRedondo.png"
-                        width="200px">
-                </div>
+                      src="../imagenes/LogoCuadrado-removebg-preview.png" width="200px" alt="Logo footer">
+                  </div>
                 <nav class="footer-nav">
                     <ul class="footer-nav-lista">
                         <li>
@@ -309,7 +308,7 @@
         </main>
         <script
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="../scripts/presupuesto.js"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -317,138 +316,6 @@
             src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script >
-      let items = [];
-      let contador = 1;
-      let precioTotal = 0;
-      let seleccionadas = new Set();
-
-      document.querySelectorAll('.tarjeta').forEach(tarjeta => {
-        tarjeta.addEventListener('click', () => {
-          const nombre = tarjeta.getAttribute('data-nombre');
-          const precio = parseInt(tarjeta.getAttribute('data-precio'));
-
-          if(seleccionadas.has(nombre)){
-            Swal.fire({
-                icon:"warning",
-                title:"Sección ya agregada",
-                text:`La seccion "${nombre}" ya esta en la lista`,
-                confirmButtonText:"Entendido"
-            });
-            return;
-          }
-          seleccionadas.add(nombre);
-          const item = {
-            id: contador++,
-            qty: 1,
-            description: nombre,
-            cost: precio.toFixed(2)
-          };
-
-          items.push(item);
-          actualizarPresupuesto();
-          precioTotal += precio;
-          document.getElementById('precio-total').textContent = precioTotal;
-
-
-        //   const nuevoElemento = document.createElement('div');
-        //   nuevoElemento.textContent = nombre;
-        //   document.getElementById('contenido-hoja').appendChild(nuevoElemento);    
-        });
-      });
-
-
-function eliminarElemento(id) {
-    Swal.fire({
-        title: "¿Seguro que quieres eliminar este ítem?",
-        text: "Se restará del total.",
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonColor: "#d33",
-        cancelButtonColor: "#3085d6",
-        confirmButtonText: "Sí, eliminar",
-        cancelButtonText: "Cancelar"
-    }).then((result) => {
-        if (result.isConfirmed) {
-            const index = items.findIndex(item => item.id === id);
-
-            if (index !== -1) {
-                // Restar el costo del item eliminado
-                precioTotal -= parseFloat(items[index].cost);
-                document.getElementById('precio-total').textContent = precioTotal;
-
-                // Eliminar del array
-                items.splice(index, 1);
-
-                // Actualizar la tabla
-                actualizarPresupuesto();
-
-                Swal.fire({
-                    icon: "success",
-                    title: "Ítem eliminado",
-                    text: "Se ha eliminado correctamente.",
-                    confirmButtonText: "OK"
-                });
-            }
-        }
-    });
-}
-
-    function actualizarPresupuesto() {
-    let tbody = document.getElementById('itemsLista');
-    tbody.innerHTML = '';
-
-    let subtotal = 0;
-    items.forEach(item => {
-        subtotal += parseFloat(item.cost);
-        let fila = document.createElement("tr");
-
-        fila.innerHTML = `
-            <td>X${item.qty}</td>
-            <td>${item.id}</td>
-            <td>${item.description}</td>
-            <td>$${item.cost}</td>
-        
-        `;
-
-        tbody.appendChild(fila);
-    });
-
-    let iva = subtotal * 0.10;
-    let total = subtotal + iva;
-
-    document.getElementById('subtotal').textContent = subtotal.toFixed(2);
-    document.getElementById('iva').textContent = iva.toFixed(2);
-    document.getElementById('total').textContent = total.toFixed(2);
-
-    // Agregar eventos de eliminar a los botones recién creados
-    document.querySelectorAll('.btn-eliminar').forEach(boton => {
-        boton.addEventListener('click', function () {
-            let id = parseInt(this.getAttribute('data-id'));
-            eliminarElemento(id);
-        });
-    });
-    document.getElementById('mostrarPresupuesto').addEventListener('click', () => {
-        document.getElementById('presupuesto').style.display = 'block';
-      });
-}
-
-function generarPDF() {
-    const elemento = document.getElementById('presupuesto');
-   // <img src="data:image/png;base64,{{base64_image_data}}" alt="Imagen del presupuesto" />
-    const opciones = {
-  margin: [10, 10, 10, 10],
-  filename: 'Presupuesto.pdf',
-  html2canvas: { scale: 1.5 },
-  jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-  pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
-};
-
-
-    html2pdf()
-      .from(elemento)
-      .set(opciones)
-      .save();
-  }
 //   import emailjs from '@emailjs/browser';
 
 // function enviarPDF() {
@@ -474,6 +341,7 @@ function generarPDF() {
     <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="../scripts/scriptEnvPresupuesto.js" type="module"></script>
+<script src="../scripts/presupuesto.js"></script>
 <script src="../globalScript.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {

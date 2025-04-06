@@ -1,82 +1,180 @@
-
+/* Estilos generales para las páginas de cursos */
 .contenidoCurso {
-    display: flex;
-flex-direction: column;
-
-    align-items: center;
-    padding: 20px;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding-top:100px ;
 }
 
-
-.tablaContenido table {
-    width: 100%;
-    margin: 20px auto;
-    border-collapse: collapse;
+.tablaContenido {
     background: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+    transition: transform 0.3s ease;
+}
+
+.tablaContenido:hover {
+    transform: translateY(-5px);
+}
+
+.tituloC {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.tituloC::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #3498db, #2ecc71);
+    border-radius: 2px;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 2rem 0;
+    background: white;
+    border-radius: 15px;
     overflow: hidden;
-    display: flex;
-}
-
-.tablaContenido .tituloC{
-    justify-content: center;
-    font-weight: 200;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 18px;
-    font-weight: 300;
-    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 th {
-    background-color: #2a2a2a;
+    background: linear-gradient(135deg, #3498db, #2ecc71);
     color: white;
+    padding: 1.2rem;
+    text-align: left;
+    font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+td {
+    padding: 1.2rem;
+    border-bottom: 1px solid #eee;
+    color: #2c3e50;
+    transition: background-color 0.3s ease;
 }
 
-tr:hover {
-    background-color: #ddd;
-    transition: 0.3s;
-}
-.tablaContenido table th:nth-child(1),
-.tablaContenido table td:nth-child(1) {
-    width: 10%; 
-}
-.tablaContenido table th:nth-child(2),
-.tablaContenido table td:nth-child(2) {
-    width: 80%; /* Aumenta el ancho de la columna de Contenido */
+tr:hover td {
+    background-color: #f8f9fa;
 }
 
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Estilos para los botones */
 .button {
-    display: inline-block;
-    background: #007BFF; /* Azul vibrante */
-    padding: 12px 24px;
-    border-radius: 8px;
     text-align: center;
-    transition: background 0.3s, transform 0.2s;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 2rem 0;
 }
 
 .button a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #3498db, #2ecc71);
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.button:hover {
-    background: #0056b3; /* Azul más oscuro en hover */
-    transform: scale(1.05); /* Pequeño aumento de tamaño */
+.button a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #2ecc71, #3498db);
 }
 
-.button:active {
-    background: #004494; /* Aún más oscuro cuando se presiona */
-    transform: scale(0.98);
+.volverCursos {
+    margin-top: 1rem;
+}
+
+.volverCursos a {
+    background: linear-gradient(135deg, #95a5a6, #7f8c8d);
+}
+
+.volverCursos a:hover {
+    background: linear-gradient(135deg, #7f8c8d, #95a5a6);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tablaContenido {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contenidoCurso {
+        padding: 1rem;
+        padding-top: 100px;
+    }
+
+    .tablaContenido {
+        padding: 1rem;
+    }
+
+    .tituloC {
+        font-size: 2rem;
+    }
+
+    th, td {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .button a {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Estilos para el contenedor de la tabla */
+.tablaContenido {
+    position: relative;
+    overflow: hidden;
+}
+
+.tablaContenido::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(52, 152, 219, 0.1), rgba(46, 204, 113, 0.1));
+    z-index: 0;
+}
+
+.tablaContenido > * {
+    position: relative;
+    z-index: 1;
 }
